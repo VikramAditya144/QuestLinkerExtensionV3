@@ -1,5 +1,8 @@
 const API_URL = "https://scalerquest.onrender.com";
 const btn = document.getElementById('generateLinkBtn');
+
+
+
 btn.addEventListener("click", async (event) => {
     btn.setAttribute('disabled',true);
     // event.preventDefault();
@@ -7,6 +10,8 @@ btn.addEventListener("click", async (event) => {
     await questionExists(questionNameValue);
     // console.log("C")
 });
+
+
 
 // Add event listener to the "Contribute" form
 document.getElementById("contributionForm").addEventListener("submit", function(event) {
