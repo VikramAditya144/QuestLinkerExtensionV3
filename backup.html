@@ -1,0 +1,39 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ScalerQuestLinker</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+</head>
+<body>
+    <h3>Scaler Quest Quest</h3>
+    <p id="con"></p>
+
+    <form id="contributionForm" style="display: none;">
+        <label for="contributionQuestionId">Question ID:</label>
+        <input type="text" id="contributionQuestionId" name="contributionQuestionId" placeholder="Enter Question ID" required>
+
+        <label for="contributionQuestionLink">Question Link:</label>
+        <input type="text" id="contributionQuestionLink" name="contributionQuestionLink" placeholder="Enter Question Link" required>
+
+        <label for="contributorName">Contributor's Name:</label>
+        <input type="text" id="contributorName" name="contributorName" placeholder="Enter Your Name" required>
+
+        <input type="submit" value="Contribute">
+    </form>
+
+    <form id="askQuestionForm" action="/submit" method="post">
+        <label for="username">Question Name:</label>
+        <input type="text" id="username" name="username" placeholder="Enter The Question :" required>
+        <input type="button" value="Go To LeetCode" id="generateLinkBtn">
+    </form>
+
+    <script nonce="your_nonce_value" src="script.js"></script>
+
+</body>
+</html>
+
+
